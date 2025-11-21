@@ -1,0 +1,12 @@
+[
+    {
+        "title": "The Articles (Der/Die/Das)",
+        "content": "# German Articles\n\nIn German, nouns have genders. This is one of the most challenging aspects for beginners, but don't worry!\n\n### The Three Genders\n\n1. **Der** (Masculine)\n   - Used for male persons, days of the week, months, and seasons.\n   - *Example:* Der Mann (The man), Der Montag (Monday).\n\n2. **Die** (Feminine)\n   - Used for female persons and many words ending in -e, -ung, -heit, -keit.\n   - *Example:* Die Frau (The woman), Die Zeitung (The newspaper).\n\n3. **Das** (Neutral)\n   - Used for young persons/animals, metals, and words ending in -chen, -lein.\n   - *Example:* Das Kind (The child), Das Mädchen (The girl - yes, it's neutral!).\n\n### Tips\n\n- Always learn the article together with the noun.\n- Use color coding (like in this app!) to help your memory.",
+        "order_index": 1
+    },
+    {
+        "title": "Simple Greetings",
+        "content": "# Greetings & Farewells\n\nStart your conversation right!\n\n### Hello\n\n- **Hallo**: Casual, used with friends and family.\n- **Guten Morgen**: Good morning (until ~11 AM).\n- **Guten Tag**: Good day (formal, used throughout the day).\n- **Guten Abend**: Good evening.\n\n### Goodbye\n\n- **Tschüss**: Bye (Casual).\n- **Auf Wiedersehen**: Goodbye (Formal).\n- **Bis bald**: See you soon.",
+        "order_index": 2
+    }
+]

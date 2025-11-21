@@ -1,0 +1,302 @@
+[
+    {
+        "german_word": "Apfel",
+        "article": "der",
+        "translation": "Apple",
+        "example_sentence": "Der Apfel ist rot."
+    },
+    {
+        "german_word": "Haus",
+        "article": "das",
+        "translation": "House",
+        "example_sentence": "Das Haus ist groß."
+    },
+    {
+        "german_word": "Katze",
+        "article": "die",
+        "translation": "Cat",
+        "example_sentence": "Die Katze schläft."
+    },
+    {
+        "german_word": "Hund",
+        "article": "der",
+        "translation": "Dog",
+        "example_sentence": "Der Hund bellt."
+    },
+    {
+        "german_word": "Auto",
+        "article": "das",
+        "translation": "Car",
+        "example_sentence": "Das Auto fährt schnell."
+    },
+    {
+        "german_word": "Buch",
+        "article": "das",
+        "translation": "Book",
+        "example_sentence": "Ich lese das Buch."
+    },
+    {
+        "german_word": "Tisch",
+        "article": "der",
+        "translation": "Table",
+        "example_sentence": "Der Tisch ist aus Holz."
+    },
+    {
+        "german_word": "Stuhl",
+        "article": "der",
+        "translation": "Chair",
+        "example_sentence": "Der Stuhl ist bequem."
+    },
+    {
+        "german_word": "Fenster",
+        "article": "das",
+        "translation": "Window",
+        "example_sentence": "Das Fenster ist offen."
+    },
+    {
+        "german_word": "Tür",
+        "article": "die",
+        "translation": "Door",
+        "example_sentence": "Die Tür ist geschlossen."
+    },
+    {
+        "german_word": "Wasser",
+        "article": "das",
+        "translation": "Water",
+        "example_sentence": "Ich trinke Wasser."
+    },
+    {
+        "german_word": "Brot",
+        "article": "das",
+        "translation": "Bread",
+        "example_sentence": "Das Brot ist frisch."
+    },
+    {
+        "german_word": "Milch",
+        "article": "die",
+        "translation": "Milk",
+        "example_sentence": "Die Milch ist weiß."
+    },
+    {
+        "german_word": "Kaffee",
+        "article": "der",
+        "translation": "Coffee",
+        "example_sentence": "Der Kaffee ist heiß."
+    },
+    {
+        "german_word": "Tee",
+        "article": "der",
+        "translation": "Tea",
+        "example_sentence": "Ich mag Tee."
+    },
+    {
+        "german_word": "Mann",
+        "article": "der",
+        "translation": "Man",
+        "example_sentence": "Der Mann arbeitet."
+    },
+    {
+        "german_word": "Frau",
+        "article": "die",
+        "translation": "Woman",
+        "example_sentence": "Die Frau liest."
+    },
+    {
+        "german_word": "Kind",
+        "article": "das",
+        "translation": "Child",
+        "example_sentence": "Das Kind spielt."
+    },
+    {
+        "german_word": "Schule",
+        "article": "die",
+        "translation": "School",
+        "example_sentence": "Die Schule beginnt um 8."
+    },
+    {
+        "german_word": "Lehrer",
+        "article": "der",
+        "translation": "Teacher",
+        "example_sentence": "Der Lehrer erklärt gut."
+    },
+    {
+        "german_word": "Schüler",
+        "article": "der",
+        "translation": "Student",
+        "example_sentence": "Der Schüler lernt."
+    },
+    {
+        "german_word": "Arbeit",
+        "article": "die",
+        "translation": "Work",
+        "example_sentence": "Die Arbeit ist wichtig."
+    },
+    {
+        "german_word": "Stadt",
+        "article": "die",
+        "translation": "City",
+        "example_sentence": "Die Stadt ist laut."
+    },
+    {
+        "german_word": "Land",
+        "article": "das",
+        "translation": "Country",
+        "example_sentence": "Das Land ist schön."
+    },
+    {
+        "german_word": "Frage",
+        "article": "die",
+        "translation": "Question",
+        "example_sentence": "Ich habe eine Frage."
+    },
+    {
+        "german_word": "Antwort",
+        "article": "die",
+        "translation": "Answer",
+        "example_sentence": "Die Antwort ist richtig."
+    },
+    {
+        "german_word": "Name",
+        "article": "der",
+        "translation": "Name",
+        "example_sentence": "Mein Name ist Paul."
+    },
+    {
+        "german_word": "Zeit",
+        "article": "die",
+        "translation": "Time",
+        "example_sentence": "Ich habe keine Zeit."
+    },
+    {
+        "german_word": "Geld",
+        "article": "das",
+        "translation": "Money",
+        "example_sentence": "Geld ist nicht alles."
+    },
+    {
+        "german_word": "Weg",
+        "article": "der",
+        "translation": "Way/Path",
+        "example_sentence": "Der Weg ist lang."
+    },
+    {
+        "german_word": "Bild",
+        "article": "das",
+        "translation": "Picture",
+        "example_sentence": "Das Bild ist bunt."
+    },
+    {
+        "german_word": "Baum",
+        "article": "der",
+        "translation": "Tree",
+        "example_sentence": "Der Baum ist hoch."
+    },
+    {
+        "german_word": "Blume",
+        "article": "die",
+        "translation": "Flower",
+        "example_sentence": "Die Blume riecht gut."
+    },
+    {
+        "german_word": "Sonne",
+        "article": "die",
+        "translation": "Sun",
+        "example_sentence": "Die Sonne scheint."
+    },
+    {
+        "german_word": "Mond",
+        "article": "der",
+        "translation": "Moon",
+        "example_sentence": "Der Mond leuchtet."
+    },
+    {
+        "german_word": "Stern",
+        "article": "der",
+        "translation": "Star",
+        "example_sentence": "Der Stern funkelt."
+    },
+    {
+        "german_word": "Himmel",
+        "article": "der",
+        "translation": "Sky",
+        "example_sentence": "Der Himmel ist blau."
+    },
+    {
+        "german_word": "Meer",
+        "article": "das",
+        "translation": "Sea",
+        "example_sentence": "Das Meer ist tief."
+    },
+    {
+        "german_word": "Berg",
+        "article": "der",
+        "translation": "Mountain",
+        "example_sentence": "Der Berg ist steil."
+    },
+    {
+        "german_word": "Fluss",
+        "article": "der",
+        "translation": "River",
+        "example_sentence": "Der Fluss fließt."
+    },
+    {
+        "german_word": "Wald",
+        "article": "der",
+        "translation": "Forest",
+        "example_sentence": "Der Wald ist dunkel."
+    },
+    {
+        "german_word": "Woche",
+        "article": "die",
+        "translation": "Week",
+        "example_sentence": "Die Woche hat 7 Tage."
+    },
+    {
+        "german_word": "Jahr",
+        "article": "das",
+        "translation": "Year",
+        "example_sentence": "Das Jahr ist bald um."
+    },
+    {
+        "german_word": "Tag",
+        "article": "der",
+        "translation": "Day",
+        "example_sentence": "Der Tag ist schön."
+    },
+    {
+        "german_word": "Nacht",
+        "article": "die",
+        "translation": "Night",
+        "example_sentence": "Die Nacht ist ruhig."
+    },
+    {
+        "german_word": "Morgen",
+        "article": "der",
+        "translation": "Morning",
+        "example_sentence": "Der Morgen ist frisch."
+    },
+    {
+        "german_word": "Abend",
+        "article": "der",
+        "translation": "Evening",
+        "example_sentence": "Der Abend ist gemütlich."
+    },
+    {
+        "german_word": "Freund",
+        "article": "der",
+        "translation": "Friend",
+        "example_sentence": "Er ist mein Freund."
+    },
+    {
+        "german_word": "Familie",
+        "article": "die",
+        "translation": "Family",
+        "example_sentence": "Meine Familie ist groß."
+    },
+    {
+        "german_word": "Liebe",
+        "article": "die",
+        "translation": "Love",
+        "example_sentence": "Liebe ist wichtig."
+    }
+]

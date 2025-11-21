@@ -1,0 +1,58 @@
+🎯 Project Overview: German Language Learning App
+Your app is a mobile German learning application built with modern technologies, featuring immersive vocabulary practice, quiz challenges, and structured lesson content.
+
+📱 Core Features
+1. Card Deck (Swipe-to-Learn)
+Spaced repetition flashcard system
+Swipe right to mark as "known", swipe left to study again
+Visual feedback with icons during swipes
+Haptic feedback for successful swipes
+Daily goal tracking with circular progress indicator
+Word metadata display (level, learning streak)
+3D flip animation for cards
+2. Quiz Challenge
+Timed multiple-choice quiz (15 seconds per question)
+Lives system (start with 3 lives)
+Combo multiplier system for consecutive correct answers
+High score tracking
+Visual and audio feedback for correct/incorrect answers
+Game over modal with replay option
+Full-screen game modal experience
+3. Learn Section
+Real-World Scenarios: Interactive scenario-based learning (e.g., "At the Cafe", "At the Doctor")
+Grammar & Topics: Structured lessons with progress tracking
+Visual progress indicators (checkmarks for completed lessons)
+4. Settings
+Customize daily word goals
+App preferences management
+🛠️ Technology Stack
+Framework & Core
+Expo SDK 54 - React Native development platform
+React Native 0.81.5 - Mobile app framework
+React 19.1.0 - UI library
+Expo Router - File-based routing with typed routes
+TypeScript - Type safety
+UI & Styling
+Tamagui - Cross-platform UI framework
+React Native Reanimated 4.1.1 - Smooth animations
+React Native Gesture Handler - Touch interactions
+React Navigation - Tab navigation
+State Management
+Zustand 5.0.8 - Lightweight state management
+AsyncStorage - Persistent storage for user data
+Database
+Expo SQLite - Local database for vocabulary, lessons, and progress
+Media & Interactions
+Expo AV - Audio/video playback (sound effects)
+Expo Haptics - Tactile feedback
+Expo Speech - Text-to-speech for pronunciation
+Additional Features
+React Native Markdown Display - Lesson content rendering
+Expo Asset & File System - Asset management
+Safe Area Context - Handle device notches/insets
+📊 Data Structure
+Vocabulary words with mastery levels
+Lessons organized by topics
+Real-world conversation scenarios
+Quiz questions with multiple-choice answers
+User progress tracking (daily goals, streaks, high scores)

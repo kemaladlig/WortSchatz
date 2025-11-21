@@ -1,0 +1,1283 @@
+[
+    {
+        "german_word": "der Apfel",
+        "article": "der",
+        "translation": "apple",
+        "example_sentence": "Der Apfel ist rot.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Banane",
+        "article": "die",
+        "translation": "banana",
+        "example_sentence": "Die Banane ist gelb.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Brot",
+        "article": "das",
+        "translation": "bread",
+        "example_sentence": "Ich esse gerne Brot.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Wasser",
+        "article": "das",
+        "translation": "water",
+        "example_sentence": "Kann ich bitte Wasser haben?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Kaffee",
+        "article": "der",
+        "translation": "coffee",
+        "example_sentence": "Der Kaffee ist heiß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Milch",
+        "article": "die",
+        "translation": "milk",
+        "example_sentence": "Ich trinke Kaffee mit Milch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Bier",
+        "article": "das",
+        "translation": "beer",
+        "example_sentence": "Deutsches Bier ist berühmt.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Wein",
+        "article": "der",
+        "translation": "wine",
+        "example_sentence": "Der Wein schmeckt gut.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Fleisch",
+        "article": "das",
+        "translation": "meat",
+        "example_sentence": "Isst du Fleisch?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Fisch",
+        "article": "der",
+        "translation": "fish",
+        "example_sentence": "Der Fisch ist frisch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Gemüse",
+        "article": "das",
+        "translation": "vegetables",
+        "example_sentence": "Gemüse ist gesund.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Obst",
+        "article": "das",
+        "translation": "fruit",
+        "example_sentence": "Ich mag Obst.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Kartoffel",
+        "article": "die",
+        "translation": "potato",
+        "example_sentence": "Kartoffeln sind typisch deutsch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Reis",
+        "article": "der",
+        "translation": "rice",
+        "example_sentence": "Ich esse Hähnchen mit Reis.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Nudel",
+        "article": "die",
+        "translation": "noodle",
+        "example_sentence": "Die Nudeln sind lecker.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Ei",
+        "article": "das",
+        "translation": "egg",
+        "example_sentence": "Das Ei ist gekocht.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Käse",
+        "article": "der",
+        "translation": "cheese",
+        "example_sentence": "Ich liebe Käse.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Wurst",
+        "article": "die",
+        "translation": "sausage",
+        "example_sentence": "Die Wurst ist heiß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Frühstück",
+        "article": "das",
+        "translation": "breakfast",
+        "example_sentence": "Was isst du zum Frühstück?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Mittagessen",
+        "article": "das",
+        "translation": "lunch",
+        "example_sentence": "Das Mittagessen ist fertig.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Abendessen",
+        "article": "das",
+        "translation": "dinner",
+        "example_sentence": "Wir essen um 19 Uhr Abendessen.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Zug",
+        "article": "der",
+        "translation": "train",
+        "example_sentence": "Der Zug kommt pünktlich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Bus",
+        "article": "der",
+        "translation": "bus",
+        "example_sentence": "Ich nehme den Bus.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Flugzeug",
+        "article": "das",
+        "translation": "airplane",
+        "example_sentence": "Das Flugzeug fliegt hoch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Auto",
+        "article": "das",
+        "translation": "car",
+        "example_sentence": "Mein Auto ist blau.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Fahrrad",
+        "article": "das",
+        "translation": "bicycle",
+        "example_sentence": "Ich fahre gerne Fahrrad.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Bahnhof",
+        "article": "der",
+        "translation": "train station",
+        "example_sentence": "Wir treffen uns am Bahnhof.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Flughafen",
+        "article": "der",
+        "translation": "airport",
+        "example_sentence": "Der Flughafen ist groß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Ticket",
+        "article": "das",
+        "translation": "ticket",
+        "example_sentence": "Hast du das Ticket?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Koffer",
+        "article": "der",
+        "translation": "suitcase",
+        "example_sentence": "Mein Koffer ist schwer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Reise",
+        "article": "die",
+        "translation": "trip/journey",
+        "example_sentence": "Gute Reise!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Urlaub",
+        "article": "der",
+        "translation": "vacation",
+        "example_sentence": "Ich brauche Urlaub.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Hotel",
+        "article": "das",
+        "translation": "hotel",
+        "example_sentence": "Das Hotel ist teuer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Zimmer",
+        "article": "das",
+        "translation": "room",
+        "example_sentence": "Das Zimmer ist sauber.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Pass",
+        "article": "der",
+        "translation": "passport",
+        "example_sentence": "Zeigen Sie mir bitte Ihren Pass.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Karte",
+        "article": "die",
+        "translation": "map/card",
+        "example_sentence": "Ich schaue auf die Karte.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Weg",
+        "article": "der",
+        "translation": "way/path",
+        "example_sentence": "Kennst du den Weg?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Straße",
+        "article": "die",
+        "translation": "street",
+        "example_sentence": "Die Straße ist lang.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Stadt",
+        "article": "die",
+        "translation": "city",
+        "example_sentence": "Berlin ist eine große Stadt.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Land",
+        "article": "das",
+        "translation": "country",
+        "example_sentence": "Welches Land möchtest du besuchen?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Arbeit",
+        "article": "die",
+        "translation": "work",
+        "example_sentence": "Die Arbeit macht Spaß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Beruf",
+        "article": "der",
+        "translation": "profession",
+        "example_sentence": "Was ist dein Beruf?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Lehrer",
+        "article": "der",
+        "translation": "teacher (male)",
+        "example_sentence": "Der Lehrer erklärt die Grammatik.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Lehrerin",
+        "article": "die",
+        "translation": "teacher (female)",
+        "example_sentence": "Die Lehrerin ist nett.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Arzt",
+        "article": "der",
+        "translation": "doctor (male)",
+        "example_sentence": "Ich muss zum Arzt.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Ärztin",
+        "article": "die",
+        "translation": "doctor (female)",
+        "example_sentence": "Die Ärztin hilft mir.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Büro",
+        "article": "das",
+        "translation": "office",
+        "example_sentence": "Ich arbeite im Büro.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Computer",
+        "article": "der",
+        "translation": "computer",
+        "example_sentence": "Der Computer ist neu.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Chef",
+        "article": "der",
+        "translation": "boss",
+        "example_sentence": "Der Chef ist heute nicht da.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Kollege",
+        "article": "der",
+        "translation": "colleague",
+        "example_sentence": "Mein Kollege ist hilfsbereit.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Firma",
+        "article": "die",
+        "translation": "company",
+        "example_sentence": "Die Firma ist international.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Geld",
+        "article": "das",
+        "translation": "money",
+        "example_sentence": "Zeit ist Geld.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Vertrag",
+        "article": "der",
+        "translation": "contract",
+        "example_sentence": "Ich unterschreibe den Vertrag.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Meeting",
+        "article": "das",
+        "translation": "meeting",
+        "example_sentence": "Wir haben ein Meeting um 10 Uhr.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Pause",
+        "article": "die",
+        "translation": "break",
+        "example_sentence": "Wann machen wir Pause?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Urlaub",
+        "article": "der",
+        "translation": "vacation/leave",
+        "example_sentence": "Ich habe zwei Wochen Urlaub.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Feierabend",
+        "article": "der",
+        "translation": "end of work day",
+        "example_sentence": "Endlich Feierabend!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Wochenende",
+        "article": "das",
+        "translation": "weekend",
+        "example_sentence": "Schönes Wochenende!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Montag",
+        "article": "der",
+        "translation": "Monday",
+        "example_sentence": "Am Montag arbeite ich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Freitag",
+        "article": "der",
+        "translation": "Friday",
+        "example_sentence": "Freitag ist mein Lieblingstag.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Familie",
+        "article": "die",
+        "translation": "family",
+        "example_sentence": "Meine Familie ist groß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Vater",
+        "article": "der",
+        "translation": "father",
+        "example_sentence": "Mein Vater heißt Hans.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Mutter",
+        "article": "die",
+        "translation": "mother",
+        "example_sentence": "Meine Mutter kocht gut.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Bruder",
+        "article": "der",
+        "translation": "brother",
+        "example_sentence": "Ich habe einen Bruder.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Schwester",
+        "article": "die",
+        "translation": "sister",
+        "example_sentence": "Meine Schwester ist jünger als ich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Kind",
+        "article": "das",
+        "translation": "child",
+        "example_sentence": "Das Kind spielt im Garten.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Sohn",
+        "article": "der",
+        "translation": "son",
+        "example_sentence": "Sein Sohn geht zur Schule.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Tochter",
+        "article": "die",
+        "translation": "daughter",
+        "example_sentence": "Ihre Tochter studiert in Berlin.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Freund",
+        "article": "der",
+        "translation": "friend (male) / boyfriend",
+        "example_sentence": "Das ist mein Freund.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Freundin",
+        "article": "die",
+        "translation": "friend (female) / girlfriend",
+        "example_sentence": "Sie ist meine beste Freundin.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Mann",
+        "article": "der",
+        "translation": "man / husband",
+        "example_sentence": "Der Mann ist groß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Frau",
+        "article": "die",
+        "translation": "woman / wife",
+        "example_sentence": "Die Frau liest ein Buch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Haus",
+        "article": "das",
+        "translation": "house",
+        "example_sentence": "Wir kaufen ein Haus.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Wohnung",
+        "article": "die",
+        "translation": "apartment",
+        "example_sentence": "Die Wohnung ist in München.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Tisch",
+        "article": "der",
+        "translation": "table",
+        "example_sentence": "Das Essen steht auf dem Tisch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Stuhl",
+        "article": "der",
+        "translation": "chair",
+        "example_sentence": "Der Stuhl ist bequem.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Bett",
+        "article": "das",
+        "translation": "bed",
+        "example_sentence": "Ich gehe ins Bett.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Küche",
+        "article": "die",
+        "translation": "kitchen",
+        "example_sentence": "Die Küche ist modern.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Bad",
+        "article": "das",
+        "translation": "bathroom",
+        "example_sentence": "Wo ist das Bad?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Wohnzimmer",
+        "article": "das",
+        "translation": "living room",
+        "example_sentence": "Wir sitzen im Wohnzimmer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Schlüssel",
+        "article": "der",
+        "translation": "key",
+        "example_sentence": "Ich habe meinen Schlüssel verloren.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Tür",
+        "article": "die",
+        "translation": "door",
+        "example_sentence": "Mach bitte die Tür zu.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Fenster",
+        "article": "das",
+        "translation": "window",
+        "example_sentence": "Das Fenster ist offen.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Zeit",
+        "article": "die",
+        "translation": "time",
+        "example_sentence": "Ich habe keine Zeit.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Tag",
+        "article": "der",
+        "translation": "day",
+        "example_sentence": "Der Tag war lang.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Woche",
+        "article": "die",
+        "translation": "week",
+        "example_sentence": "Nächste Woche habe ich frei.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Monat",
+        "article": "der",
+        "translation": "month",
+        "example_sentence": "Der Monat hat 30 Tage.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Jahr",
+        "article": "das",
+        "translation": "year",
+        "example_sentence": "Frohes neues Jahr!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "heute",
+        "article": "",
+        "translation": "today",
+        "example_sentence": "Heute ist es warm.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "morgen",
+        "article": "",
+        "translation": "tomorrow",
+        "example_sentence": "Morgen regnet es.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "gestern",
+        "article": "",
+        "translation": "yesterday",
+        "example_sentence": "Gestern war ich krank.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "jetzt",
+        "article": "",
+        "translation": "now",
+        "example_sentence": "Ich muss jetzt gehen.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "später",
+        "article": "",
+        "translation": "later",
+        "example_sentence": "Bis später!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "immer",
+        "article": "",
+        "translation": "always",
+        "example_sentence": "Er kommt immer zu spät.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "nie",
+        "article": "",
+        "translation": "never",
+        "example_sentence": "Ich war nie in Paris.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "oft",
+        "article": "",
+        "translation": "often",
+        "example_sentence": "Ich gehe oft ins Kino.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "manchmal",
+        "article": "",
+        "translation": "sometimes",
+        "example_sentence": "Manchmal trinke ich Tee.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Farbe",
+        "article": "die",
+        "translation": "color",
+        "example_sentence": "Welche Farbe magst du?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "rot",
+        "article": "",
+        "translation": "red",
+        "example_sentence": "Die Tomate ist rot.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "blau",
+        "article": "",
+        "translation": "blue",
+        "example_sentence": "Der Himmel ist blau.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "grün",
+        "article": "",
+        "translation": "green",
+        "example_sentence": "Das Gras ist grün.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "gelb",
+        "article": "",
+        "translation": "yellow",
+        "example_sentence": "Die Sonne ist gelb.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schwarz",
+        "article": "",
+        "translation": "black",
+        "example_sentence": "Die Katze ist schwarz.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "weiß",
+        "article": "",
+        "translation": "white",
+        "example_sentence": "Der Schnee ist weiß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Wetter",
+        "article": "das",
+        "translation": "weather",
+        "example_sentence": "Das Wetter ist schön.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Sonne",
+        "article": "die",
+        "translation": "sun",
+        "example_sentence": "Die Sonne scheint.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Regen",
+        "article": "der",
+        "translation": "rain",
+        "example_sentence": "Der Regen ist kalt.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Schnee",
+        "article": "der",
+        "translation": "snow",
+        "example_sentence": "Ich mag Schnee.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Wind",
+        "article": "der",
+        "translation": "wind",
+        "example_sentence": "Der Wind ist stark.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "warm",
+        "article": "",
+        "translation": "warm",
+        "example_sentence": "Mir ist warm.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "kalt",
+        "article": "",
+        "translation": "cold",
+        "example_sentence": "Es ist kalt draußen.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "gut",
+        "article": "",
+        "translation": "good",
+        "example_sentence": "Das Essen ist gut.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schlecht",
+        "article": "",
+        "translation": "bad",
+        "example_sentence": "Mir ist schlecht.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "groß",
+        "article": "",
+        "translation": "big/tall",
+        "example_sentence": "Das Haus ist groß.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "klein",
+        "article": "",
+        "translation": "small/short",
+        "example_sentence": "Die Maus ist klein.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schön",
+        "article": "",
+        "translation": "beautiful",
+        "example_sentence": "Das Bild ist schön.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "neu",
+        "article": "",
+        "translation": "new",
+        "example_sentence": "Ich habe ein neues Handy.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "alt",
+        "article": "",
+        "translation": "old",
+        "example_sentence": "Die Stadt ist alt.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "jung",
+        "article": "",
+        "translation": "young",
+        "example_sentence": "Er ist noch jung.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "teuer",
+        "article": "",
+        "translation": "expensive",
+        "example_sentence": "Das Auto ist zu teuer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "billig",
+        "article": "",
+        "translation": "cheap",
+        "example_sentence": "Das ist billig.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "einfach",
+        "article": "",
+        "translation": "easy/simple",
+        "example_sentence": "Deutsch ist nicht einfach.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schwer",
+        "article": "",
+        "translation": "heavy/difficult",
+        "example_sentence": "Die Tasche ist schwer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "wichtig",
+        "article": "",
+        "translation": "important",
+        "example_sentence": "Das ist sehr wichtig.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "richtig",
+        "article": "",
+        "translation": "correct/right",
+        "example_sentence": "Das ist richtig.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "falsch",
+        "article": "",
+        "translation": "wrong",
+        "example_sentence": "Das ist falsch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Frage",
+        "article": "die",
+        "translation": "question",
+        "example_sentence": "Ich habe eine Frage.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Antwort",
+        "article": "die",
+        "translation": "answer",
+        "example_sentence": "Ich kenne die Antwort nicht.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Problem",
+        "article": "das",
+        "translation": "problem",
+        "example_sentence": "Kein Problem!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Idee",
+        "article": "die",
+        "translation": "idea",
+        "example_sentence": "Gute Idee!",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Name",
+        "article": "der",
+        "translation": "name",
+        "example_sentence": "Mein Name ist Bond.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Nummer",
+        "article": "die",
+        "translation": "number",
+        "example_sentence": "Hast du meine Nummer?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Handy",
+        "article": "das",
+        "translation": "mobile phone",
+        "example_sentence": "Mein Handy ist leer.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "das Buch",
+        "article": "das",
+        "translation": "book",
+        "example_sentence": "Ich lese ein Buch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Zeitung",
+        "article": "die",
+        "translation": "newspaper",
+        "example_sentence": "Er liest die Zeitung.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "der Stift",
+        "article": "der",
+        "translation": "pen",
+        "example_sentence": "Hast du einen Stift?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Schule",
+        "article": "die",
+        "translation": "school",
+        "example_sentence": "Die Schule beginnt um 8 Uhr.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "die Universität",
+        "article": "die",
+        "translation": "university",
+        "example_sentence": "Sie studiert an der Universität.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "lernen",
+        "article": "",
+        "translation": "to learn",
+        "example_sentence": "Ich lerne Deutsch.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "sprechen",
+        "article": "",
+        "translation": "to speak",
+        "example_sentence": "Sprichst du Englisch?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "verstehen",
+        "article": "",
+        "translation": "to understand",
+        "example_sentence": "Ich verstehe nicht.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "wissen",
+        "article": "",
+        "translation": "to know (a fact)",
+        "example_sentence": "Ich weiß es nicht.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "kennen",
+        "article": "",
+        "translation": "to know (a person/place)",
+        "example_sentence": "Kennst du Berlin?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "denken",
+        "article": "",
+        "translation": "to think",
+        "example_sentence": "Was denkst du?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "glauben",
+        "article": "",
+        "translation": "to believe",
+        "example_sentence": "Ich glaube schon.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "fragen",
+        "article": "",
+        "translation": "to ask",
+        "example_sentence": "Darf ich etwas fragen?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "antworten",
+        "article": "",
+        "translation": "to answer",
+        "example_sentence": "Bitte antworte mir.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "sagen",
+        "article": "",
+        "translation": "to say",
+        "example_sentence": "Was sagst du?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "hören",
+        "article": "",
+        "translation": "to hear/listen",
+        "example_sentence": "Ich höre Musik.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "sehen",
+        "article": "",
+        "translation": "to see",
+        "example_sentence": "Ich sehe dich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schauen",
+        "article": "",
+        "translation": "to look/watch",
+        "example_sentence": "Wir schauen einen Film.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "gehen",
+        "article": "",
+        "translation": "to go/walk",
+        "example_sentence": "Wir gehen nach Hause.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "kommen",
+        "article": "",
+        "translation": "to come",
+        "example_sentence": "Woher kommst du?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "fahren",
+        "article": "",
+        "translation": "to drive/ride",
+        "example_sentence": "Ich fahre Auto.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "laufen",
+        "article": "",
+        "translation": "to run/walk",
+        "example_sentence": "Er läuft schnell.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "essen",
+        "article": "",
+        "translation": "to eat",
+        "example_sentence": "Ich esse Pizza.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "trinken",
+        "article": "",
+        "translation": "to drink",
+        "example_sentence": "Ich trinke Wasser.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "schlafen",
+        "article": "",
+        "translation": "to sleep",
+        "example_sentence": "Ich schlafe gut.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "aufstehen",
+        "article": "",
+        "translation": "to get up",
+        "example_sentence": "Ich stehe früh auf.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "arbeiten",
+        "article": "",
+        "translation": "to work",
+        "example_sentence": "Er arbeitet viel.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "spielen",
+        "article": "",
+        "translation": "to play",
+        "example_sentence": "Kinder spielen gerne.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "kaufen",
+        "article": "",
+        "translation": "to buy",
+        "example_sentence": "Ich kaufe Brot.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "verkaufen",
+        "article": "",
+        "translation": "to sell",
+        "example_sentence": "Er verkauft sein Auto.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "bezahlen",
+        "article": "",
+        "translation": "to pay",
+        "example_sentence": "Ich bezahle bar.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "kosten",
+        "article": "",
+        "translation": "to cost",
+        "example_sentence": "Was kostet das?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "brauchen",
+        "article": "",
+        "translation": "to need",
+        "example_sentence": "Ich brauche Hilfe.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "suchen",
+        "article": "",
+        "translation": "to search/look for",
+        "example_sentence": "Ich suche meine Brille.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "finden",
+        "article": "",
+        "translation": "to find",
+        "example_sentence": "Ich finde das gut.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "lieben",
+        "article": "",
+        "translation": "to love",
+        "example_sentence": "Ich liebe dich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "hassen",
+        "article": "",
+        "translation": "to hate",
+        "example_sentence": "Ich hasse Regen.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "mögen",
+        "article": "",
+        "translation": "to like",
+        "example_sentence": "Ich mag Schokolade.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "machen",
+        "article": "",
+        "translation": "to do/make",
+        "example_sentence": "Was machst du?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "tun",
+        "article": "",
+        "translation": "to do",
+        "example_sentence": "Es tut mir leid.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "geben",
+        "article": "",
+        "translation": "to give",
+        "example_sentence": "Gib mir bitte das Salz.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "nehmen",
+        "article": "",
+        "translation": "to take",
+        "example_sentence": "Ich nehme den Bus.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "helfen",
+        "article": "",
+        "translation": "to help",
+        "example_sentence": "Kannst du mir helfen?",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "warten",
+        "article": "",
+        "translation": "to wait",
+        "example_sentence": "Ich warte auf dich.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "wohnen",
+        "article": "",
+        "translation": "to live (reside)",
+        "example_sentence": "Ich wohne in Berlin.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "leben",
+        "article": "",
+        "translation": "to live (be alive)",
+        "example_sentence": "Er lebt gesund.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "heißen",
+        "article": "",
+        "translation": "to be called",
+        "example_sentence": "Ich heiße Anna.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "sein",
+        "article": "",
+        "translation": "to be",
+        "example_sentence": "Ich bin müde.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "haben",
+        "article": "",
+        "translation": "to have",
+        "example_sentence": "Ich habe Hunger.",
+        "mastery_level": 0
+    },
+    {
+        "german_word": "werden",
+        "article": "",
+        "translation": "to become",
+        "example_sentence": "Es wird dunkel.",
+        "mastery_level": 0
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "title": "1. The Present Tense (Präsens)",
+        "content": "# The Present Tense (Präsens)\n\nIn German, the present tense (*Präsens*) is used to talk about what is happening now, what happens regularly, and even future events.\n\n## Conjugation\n\nTo conjugate a regular verb, remove the **-en** ending and add the following endings:\n\n| Person | Ending | Example (machen) |\n|---|---|---|\n| ich | -e | mache |\n| du | -st | machst |\n| er/sie/es | -t | macht |\n| wir | -en | machen |\n| ihr | -t | macht |\n| sie/Sie | -en | machen |\n\n### Examples\n- **Ich spiele Fußball.** (I play soccer.)\n- **Er lernt Deutsch.** (He is learning German.)\n",
+        "order_index": 1
+    },
+    {
+        "title": "2. The Definite Articles (Der, Die, Das)",
+        "content": "# Definite Articles\n\nGerman nouns have three genders: Masculine, Feminine, and Neuter. The article changes depending on the gender.\n\n| Gender | Article | Example |\n|---|---|---|\n| Masculine | der | der Mann (the man) |\n| Feminine | die | die Frau (the woman) |\n| Neuter | das | das Kind (the child) |\n| Plural | die | die Kinder (the children) |\n\n**Tip:** Always learn the article with the noun!\n",
+        "order_index": 2
+    },
+    {
+        "title": "3. The Accusative Case (Akkusativ)",
+        "content": "# The Accusative Case\n\nThe Accusative case is used for the **direct object** of a sentence (the thing being acted upon).\n\n## Article Changes\n\nOnly the **masculine** article changes in the Accusative.\n\n| Gender | Nominative | Accusative |\n|---|---|---|\n| Masculine | der | **den** |\n| Feminine | die | die |\n| Neuter | das | das |\n| Plural | die | die |\n\n### Examples\n- Ich habe **einen** Hund. (I have a dog.)\n- Er sieht **den** Mann. (He sees the man.)\n",
+        "order_index": 3
+    },
+    {
+        "title": "4. The Dative Case (Dativ)",
+        "content": "# The Dative Case\n\nThe Dative case is used for the **indirect object** (to whom/for whom something is done).\n\n## Article Changes\n\n| Gender | Nominative | Dative |\n|---|---|---|\n| Masculine | der | **dem** |\n| Feminine | die | **der** |\n| Neuter | das | **dem** |\n| Plural | die | **den** (+n to noun) |\n\n### Examples\n- Ich gebe **dem** Mann das Buch. (I give the book to the man.)\n- Wir helfen **der** Frau. (We help the woman.)\n",
+        "order_index": 4
+    },
+    {
+        "title": "5. Modal Verbs (Müssen, Können, Wollen)",
+        "content": "# Modal Verbs\n\nModal verbs modify the main verb. The modal verb is conjugated in the second position, and the main verb goes to the **end** of the sentence in the infinitive form.\n\n## Common Modals\n- **können** (can/be able to)\n- **müssen** (must/have to)\n- **wollen** (want to)\n- **dürfen** (may/be allowed to)\n- **sollen** (should)\n\n### Structure\n**Subject + Modal Verb + ... + Main Verb (Infinitive)**\n\n- Ich **kann** gut **schwimmen**. (I can swim well.)\n- Wir **müssen** jetzt **gehen**. (We must go now.)\n",
+        "order_index": 5
+    },
+    {
+        "title": "6. The Perfect Tense (Perfekt)",
+        "content": "# The Perfect Tense (Perfekt)\n\nThe *Perfekt* is the most common past tense in spoken German.\n\n## Formation\nIt is formed with a helper verb (**haben** or **sein**) + the **Partizip II** (past participle) at the end.\n\n### Helper Verbs\n- **sein**: For movement (gehen, fahren) or state change (aufwachen).\n- **haben**: For most other verbs.\n\n### Examples\n- Ich **habe** Fußball **gespielt**. (I played soccer.)\n- Er **ist** nach Hause **gegangen**. (He went home.)\n",
+        "order_index": 6
+    },
+    {
+        "title": "7. Prepositions with Accusative",
+        "content": "# Prepositions with Accusative\n\nThese prepositions *always* trigger the Accusative case:\n\n- **durch** (through)\n- **für** (for)\n- **gegen** (against)\n- **ohne** (without)\n- **um** (around/at)\n\n### Examples\n- Das Geschenk ist **für dich**. (The gift is for you.)\n- Wir gehen **durch den** Park. (We go through the park.)\n",
+        "order_index": 7
+    },
+    {
+        "title": "8. Prepositions with Dative",
+        "content": "# Prepositions with Dative\n\nThese prepositions *always* trigger the Dative case:\n\n- **aus** (out of/from)\n- **bei** (at/with)\n- **mit** (with)\n- **nach** (after/to)\n- **seit** (since)\n- **von** (from/of)\n- **zu** (to)\n\n### Examples\n- Ich komme **aus der** Türkei. (I come from Turkey.)\n- Er fährt **mit dem** Bus. (He goes by bus.)\n",
+        "order_index": 8
+    },
+    {
+        "title": "9. Two-Way Prepositions (Wechselpräpositionen)",
+        "content": "# Two-Way Prepositions\n\nThese prepositions can take **Accusative** (movement/direction) or **Dative** (location/position).\n\n**List:** an, auf, hinter, in, neben, über, unter, vor, zwischen\n\n## The Rule\n- **Wohin? (Where to?)** -> **Accusative**\n  - Ich lege das Buch **auf den** Tisch. (Action/Movement)\n- **Wo? (Where?)** -> **Dative**\n  - Das Buch liegt **auf dem** Tisch. (Location)\n",
+        "order_index": 9
+    },
+    {
+        "title": "10. Simple Past (Präteritum)",
+        "content": "# Simple Past (Präteritum)\n\nThe *Präteritum* is mostly used in written German (books, newspapers) and for helper/modal verbs in speech.\n\n## Helper Verbs\n- **sein** -> war (was)\n- **haben** -> hatte (had)\n\n### Examples\n- Ich **war** müde. (I was tired.)\n- Er **hatte** keine Zeit. (He had no time.)\n\n## Regular Verbs\nAdd **-te** endings (sagte, machte).\n- Er **sagte** hallo. (He said hello.)\n",
+        "order_index": 10
+    }
+]

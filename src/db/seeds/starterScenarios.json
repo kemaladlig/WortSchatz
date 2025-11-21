@@ -1,0 +1,71 @@
+[
+    {
+        "title": "Im Restaurant",
+        "icon_name": "coffee",
+        "color_theme": "$orange10",
+        "phrases": [
+            {
+                "german_text": "Die Speisekarte, bitte.",
+                "english_text": "The menu, please."
+            },
+            {
+                "german_text": "Ich möchte bezahlen.",
+                "english_text": "I would like to pay."
+            },
+            {
+                "german_text": "Haben Sie einen Tisch für zwei?",
+                "english_text": "Do you have a table for two?"
+            },
+            {
+                "german_text": "Das Essen war lecker.",
+                "english_text": "The food was delicious."
+            }
+        ]
+    },
+    {
+        "title": "Vorstellung",
+        "icon_name": "user",
+        "color_theme": "$blue10",
+        "phrases": [
+            {
+                "german_text": "Freut mich, Sie kennenzulernen.",
+                "english_text": "Nice to meet you."
+            },
+            {
+                "german_text": "Ich bin Softwareentwickler.",
+                "english_text": "I am a software developer."
+            },
+            {
+                "german_text": "Wie heißen Sie?",
+                "english_text": "What is your name?"
+            },
+            {
+                "german_text": "Ich komme aus Deutschland.",
+                "english_text": "I come from Germany."
+            }
+        ]
+    },
+    {
+        "title": "Notfall",
+        "icon_name": "ambulance",
+        "color_theme": "$red10",
+        "phrases": [
+            {
+                "german_text": "Ich brauche einen Arzt.",
+                "english_text": "I need a doctor."
+            },
+            {
+                "german_text": "Rufen Sie die Polizei!",
+                "english_text": "Call the police!"
+            },
+            {
+                "german_text": "Wo ist das Krankenhaus?",
+                "english_text": "Where is the hospital?"
+            },
+            {
+                "german_text": "Hilfe!",
+                "english_text": "Help!"
+            }
+        ]
+    }
+]
