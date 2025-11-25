@@ -1,25 +1,39 @@
 import { resetProgress } from '@/db/repository';
+import { useAppStore } from '@/store/useAppStore';
 import { Moon, Sun, Trash2 } from '@tamagui/lucide-icons';
+import { useState } from 'react';
 import { Alert, useColorScheme } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Button, Separator, Text, XStack, YStack } from 'tamagui';
+import { Button, Separator, Spinner, Text, XStack, YStack } from 'tamagui';
 
 export default function SettingsScreen() {
     const insets = useSafeAreaInsets();
     const colorScheme = useColorScheme();
+    const [isResetting, setIsResetting] = useState(false);
+    const { resetDailyProgress } = useAppStore();
 
     const handleReset = () => {
         Alert.alert(
             "Reset Progress",
-            "Are you sure you want to reset all word mastery levels to 0?",
+            "Are you sure you want to reset all word mastery levels to 0? This will also reset your daily progress.",
             [
                 { text: "Cancel", style: "cancel" },
                 {
                     text: "Reset",
                     style: "destructive",
                     onPress: async () => {
-                        await resetProgress();
-                        Alert.alert("Success", "Progress has been reset.");
+                        setIsResetting(true);
+                        try {
+                            await resetProgress();
+                            // Reset daily progress as well
+                            resetDailyProgress();
+                            Alert.alert("Success", "All progress has been reset.");
+                        } catch (error) {
+                            Alert.alert("Error", "Failed to reset progress.");
+                            console.error(error);
+                        } finally {
+                            setIsResetting(false);
+                        }
                     }
                 }
             ]
@@ -43,11 +57,12 @@ export default function SettingsScreen() {
 
                 <Button
                     onPress={handleReset}
-                    icon={Trash2}
+                    icon={isResetting ? Spinner : Trash2}
                     theme="red"
                     size="$5"
+                    disabled={isResetting}
                 >
-                    Reset Progress
+                    {isResetting ? 'Resetting...' : 'Reset Progress'}
                 </Button>
 
                 <Text fontSize="$3" color="$color10" textAlign="center" mt="$8">

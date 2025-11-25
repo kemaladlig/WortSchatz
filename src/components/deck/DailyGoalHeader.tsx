@@ -1,6 +1,6 @@
 import { useAppStore } from '@/store/useAppStore';
 import { Trophy } from '@tamagui/lucide-icons';
-import { useEffect } from 'react';
+import { memo, useEffect } from 'react';
 import Animated, {
     useAnimatedProps,
     useSharedValue,
@@ -11,7 +11,7 @@ import { Card, Text, XStack, YStack } from 'tamagui';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
-export function DailyGoalHeader() {
+function DailyGoalHeaderComponent() {
     const { dailyWordGoal, wordsLearnedToday, checkAndResetDaily } = useAppStore();
     const progress = useSharedValue(0);
 
@@ -100,3 +100,7 @@ export function DailyGoalHeader() {
         </Card>
     );
 }
+
+// Memoize to prevent re-renders when parent re-renders
+export const DailyGoalHeader = memo(DailyGoalHeaderComponent);
+

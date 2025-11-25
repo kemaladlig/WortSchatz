@@ -25,6 +25,7 @@ interface AppState {
     incrementDailyProgress: () => void;
     checkAndResetDaily: () => void;
     setDailyGoal: (goal: number) => void;
+    resetDailyProgress: () => void;
 }
 
 export const useAppStore = create<AppState>()(
@@ -77,6 +78,8 @@ export const useAppStore = create<AppState>()(
             },
 
             setDailyGoal: (goal: number) => set({ dailyWordGoal: goal }),
+
+            resetDailyProgress: () => set({ wordsLearnedToday: 0 }),
         }),
         {
             name: 'app-storage',

@@ -1,5 +1,6 @@
 import { Word } from '@/types';
 import { getDB } from './client';
+import { dbCache } from './dbCache';
 import { CREATE_LESSONS_TABLE, CREATE_PHRASES_TABLE, CREATE_SCENARIOS_TABLE, CREATE_WORDS_TABLE } from './schema';
 import starterWords from './seeds/starterWords.json';
 
@@ -18,6 +19,14 @@ export const initDB = async () => {
     ${CREATE_SCENARIOS_TABLE}
     ${CREATE_PHRASES_TABLE}
   `);
+
+    // Create indexes for performance
+    await db.execAsync(`
+        CREATE INDEX IF NOT EXISTS idx_words_mastery ON words(mastery_level);
+        CREATE INDEX IF NOT EXISTS idx_words_last_reviewed ON words(last_reviewed);
+        CREATE INDEX IF NOT EXISTS idx_lessons_order ON lessons(order_index);
+        CREATE INDEX IF NOT EXISTS idx_phrases_scenario ON phrases(scenario_id);
+    `);
 
     // Seed Words if empty
     const resultWords = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM words');
@@ -110,9 +119,10 @@ export const initDB = async () => {
 
 export const getWords = async (limit = 10): Promise<Word[]> => {
     const db = await getDB();
-    // Fetch words with low mastery first, then random
+    // Fetch words with low mastery first, prioritizing least recently reviewed
+    // This is MUCH faster than RANDOM() and pedagogically better
     return await db.getAllAsync<Word>(
-        'SELECT * FROM words WHERE mastery_level < 5 ORDER BY mastery_level ASC, RANDOM() LIMIT ?',
+        'SELECT * FROM words WHERE mastery_level < 5 ORDER BY mastery_level ASC, last_reviewed ASC NULLS FIRST LIMIT ?',
         [limit]
     );
 };
@@ -131,8 +141,16 @@ export const resetProgress = async () => {
 };
 
 export const getLessons = async () => {
+    // Check cache first
+    const cached = dbCache.get<any[]>('lessons');
+    if (cached) return cached;
+
     const db = await getDB();
-    return await db.getAllAsync('SELECT * FROM lessons ORDER BY order_index ASC');
+    const lessons = await db.getAllAsync('SELECT * FROM lessons ORDER BY order_index ASC');
+
+    // Cache for 10 minutes (lessons rarely change)
+    dbCache.set('lessons', lessons, 10 * 60 * 1000);
+    return lessons;
 };
 
 export const getLessonById = async (id: number) => {
@@ -143,11 +161,21 @@ export const getLessonById = async (id: number) => {
 export const markLessonComplete = async (id: number) => {
     const db = await getDB();
     await db.runAsync('UPDATE lessons SET is_completed = 1 WHERE id = ?', [id]);
+    // Invalidate lessons cache
+    dbCache.invalidate('lessons');
 };
 
 export const getScenarios = async () => {
+    // Check cache first
+    const cached = dbCache.get<any[]>('scenarios');
+    if (cached) return cached;
+
     const db = await getDB();
-    return await db.getAllAsync('SELECT * FROM scenarios');
+    const scenarios = await db.getAllAsync('SELECT * FROM scenarios');
+
+    // Cache for 10 minutes (scenarios rarely change)
+    dbCache.set('scenarios', scenarios, 10 * 60 * 1000);
+    return scenarios;
 };
 
 export const getScenarioById = async (id: number) => {
