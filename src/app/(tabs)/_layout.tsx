@@ -1,4 +1,4 @@
-import { BookOpen, Layers, Trophy } from '@tamagui/lucide-icons';
+import { BarChart, BookOpen, Layers, Trophy } from '@tamagui/lucide-icons';
 import { Tabs } from 'expo-router';
 import { useColorScheme } from 'react-native';
 import { useTheme } from 'tamagui';
@@ -30,6 +30,13 @@ export default function TabLayout() {
                 options={{
                     title: 'Quiz',
                     tabBarIcon: ({ color }) => <Trophy color={color} />,
+                }}
+            />
+            <Tabs.Screen
+                name="stats"
+                options={{
+                    title: 'Stats',
+                    tabBarIcon: ({ color }) => <BarChart color={color} />,
                 }}
             />
             <Tabs.Screen

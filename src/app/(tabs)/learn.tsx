@@ -97,7 +97,14 @@ const LessonCard = memo(({ item, onPress }: { item: Lesson; onPress: (id: number
                     {item.title}
                 </Text>
             </XStack>
-            <ChevronRight size={20} color="$color10" />
+            <XStack ai="center" gap="$2">
+                <Card bordered px="$2" py="$1" bg="$gray3" br="$4">
+                    <Text fontSize="$2" color="$gray11" fontWeight="bold">
+                        {(item as any).level || 'A1'}
+                    </Text>
+                </Card>
+                <ChevronRight size={20} color="$color10" />
+            </XStack>
         </XStack>
     </Card>
 ));

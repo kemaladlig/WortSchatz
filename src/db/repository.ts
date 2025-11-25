@@ -2,10 +2,8 @@ import { Word } from '@/types';
 import { getDB } from './client';
 import { dbCache } from './dbCache';
 import { CREATE_LESSONS_TABLE, CREATE_PHRASES_TABLE, CREATE_SCENARIOS_TABLE, CREATE_WORDS_TABLE } from './schema';
-import starterWords from './seeds/starterWords.json';
 
 import bulkLessons from './seeds/bulk_lessons.json';
-import bulkWords from './seeds/bulk_words.json';
 import starterScenarios from './seeds/starterScenarios.json';
 
 export const initDB = async () => {
@@ -28,39 +26,32 @@ export const initDB = async () => {
         CREATE INDEX IF NOT EXISTS idx_phrases_scenario ON phrases(scenario_id);
     `);
 
-    // Seed Words if empty
-    const resultWords = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM words');
-    if (resultWords && resultWords.count === 0) {
-        console.log('Seeding words...');
-        await db.withTransactionAsync(async () => {
-            const statement = await db.prepareAsync(
-                'INSERT INTO words (german_word, article, translation, example_sentence) VALUES ($german_word, $article, $translation, $example_sentence)'
-            );
-            try {
-                // Combine starter and bulk words
-                const allWords = [...starterWords, ...bulkWords];
-                for (const word of allWords) {
-                    await statement.executeAsync({
-                        $german_word: word.german_word,
-                        $article: word.article,
-                        $translation: word.translation,
-                        $example_sentence: word.example_sentence
-                    });
-                }
-            } finally {
-                await statement.finalizeAsync();
-            }
-        });
-        console.log('Words seeded successfully.');
+    // Migration: Add 'level' column to words if it doesn't exist
+    try {
+        await db.execAsync('ALTER TABLE words ADD COLUMN level TEXT DEFAULT "A1"');
+    } catch (e) {
+        // Column likely exists, ignore
     }
 
-    // Seed Lessons if empty
-    const resultLessons = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM lessons');
-    if (resultLessons && resultLessons.count === 0) {
+    // Migration: Add 'level' column to lessons if it doesn't exist
+    try {
+        await db.execAsync('ALTER TABLE lessons ADD COLUMN level TEXT DEFAULT "A1"');
+    } catch (e) {
+        // Column likely exists, ignore
+    }
+
+    // Migration: Add SRS columns
+    try {
+        await db.execAsync('ALTER TABLE words ADD COLUMN easiness_factor REAL DEFAULT 2.5');
+        await db.execAsync('ALTER TABLE words ADD COLUMN interval INTEGER DEFAULT 0');
+        await db.execAsync('ALTER TABLE words ADD COLUMN repetitions INTEGER DEFAULT 0');
+        await db.execAsync('ALTER TABLE words ADD COLUMN next_review_date DATETIME');
+        console.log("Migrated words table: Added SRS columns");
+    } catch (e) {
         console.log('Seeding lessons...');
         await db.withTransactionAsync(async () => {
             const statement = await db.prepareAsync(
-                'INSERT INTO lessons (title, content, order_index) VALUES ($title, $content, $order_index)'
+                'INSERT INTO lessons (title, content, order_index, level) VALUES ($title, $content, $order_index, $level)'
             );
             try {
                 const allLessons = bulkLessons;
@@ -69,7 +60,8 @@ export const initDB = async () => {
                     await statement.executeAsync({
                         $title: lesson.title,
                         $content: lesson.content,
-                        $order_index: lesson.order_index
+                        $order_index: lesson.order_index,
+                        $level: (lesson as any).level || 'A1'
                     });
                 }
             } finally {
@@ -117,21 +109,105 @@ export const initDB = async () => {
     }
 };
 
-export const getWords = async (limit = 10): Promise<Word[]> => {
+export const getWords = async (limit = 10, excludeIds: number[] = []): Promise<Word[]> => {
     const db = await getDB();
-    // Fetch words with low mastery first, prioritizing least recently reviewed
-    // This is MUCH faster than RANDOM() and pedagogically better
-    return await db.getAllAsync<Word>(
-        'SELECT * FROM words WHERE mastery_level < 5 ORDER BY mastery_level ASC, last_reviewed ASC NULLS FIRST LIMIT ?',
-        [limit]
+    const now = new Date().toISOString();
+    const excludeClause = excludeIds.length > 0 ? `AND id NOT IN (${excludeIds.join(',')})` : '';
+
+    // 1. Fetch due reviews (prioritize by due date)
+    const reviews = await db.getAllAsync<Word>(
+        `SELECT * FROM words
+         WHERE next_review_date <= ? ${excludeClause}
+         ORDER BY next_review_date ASC
+         LIMIT ?`,
+        [now, limit]
     );
+
+    if (reviews.length >= limit) {
+        return reviews;
+    }
+
+    // 2. Fetch new words (mastery_level = 0) if we need more
+    // Mix levels to ensure variety: Try to get some A2/B1 if available
+    const remaining = limit - reviews.length;
+
+    // We want a mix. Let's try to fetch a few from each level if possible.
+    // This is a bit complex in one query without window functions (which SQLite supports but might be overkill).
+    // Let's just use RANDOM() but maybe prioritize higher levels slightly?
+    // Or simpler: Just fetch random new words. If the DB has a mix, RANDOM() will eventually show them.
+    // But user complained about only seeing A1.
+    // Let's explicitly try to fetch some non-A1 words first.
+
+    const nonA1Count = Math.floor(remaining * 0.4); // 40% non-A1
+    const a1Count = remaining - nonA1Count;
+
+    const newNonA1 = await db.getAllAsync<Word>(
+        `SELECT * FROM words
+         WHERE mastery_level = 0 AND level != 'A1' ${excludeClause}
+         ORDER BY RANDOM()
+         LIMIT ?`,
+        [nonA1Count]
+    );
+
+    const newA1 = await db.getAllAsync<Word>(
+        `SELECT * FROM words
+         WHERE mastery_level = 0 AND level = 'A1' ${excludeClause}
+         ORDER BY RANDOM()
+         LIMIT ?`,
+        [a1Count + (nonA1Count - newNonA1.length)] // Add unused quota
+    );
+
+    // Shuffle the result so they are mixed
+    const newWords = [...newNonA1, ...newA1].sort(() => Math.random() - 0.5);
+
+    return [...reviews, ...newWords];
 };
 
 export const updateMastery = async (id: number, newLevel: number) => {
     const db = await getDB();
+
+    // Simple Spaced Repetition Intervals (in days)
+    // Level 0: New/Forgot -> 0 days (Review immediately/tomorrow)
+    // Level 1: 1 day
+    // Level 2: 3 days
+    // Level 3: 7 days
+    // Level 4: 14 days
+    // Level 5: 30 days
+    const intervals = [0, 1, 3, 7, 14, 30];
+    const days = intervals[newLevel] || 0;
+
+    const nextReview = new Date();
+    nextReview.setDate(nextReview.getDate() + days);
+
+    // If level is 0, we might want to review it sooner (e.g. same session), 
+    // but for now let's say "next session" (which is effectively now if we re-fetch).
+    // Actually, if mastery drops to 0, it should probably be reviewable again soon.
+
     await db.runAsync(
-        'UPDATE words SET mastery_level = ?, last_reviewed = ? WHERE id = ?',
-        [newLevel, new Date().toISOString(), id]
+        'UPDATE words SET mastery_level = ?, last_reviewed = ?, next_review_date = ? WHERE id = ?',
+        [newLevel, new Date().toISOString(), nextReview.toISOString(), id]
+    );
+};
+
+export const getStats = async () => {
+    const db = await getDB();
+    const totalWords = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM words');
+    const learnedWords = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM words WHERE mastery_level > 0');
+    const byLevel = await db.getAllAsync<{ level: string, count: number }>('SELECT level, COUNT(*) as count FROM words GROUP BY level');
+
+    return {
+        total: totalWords?.count || 0,
+        learned: learnedWords?.count || 0,
+        byLevel
+    };
+};
+
+export const getWordsByStatus = async (status: 'learned' | 'new', limit = 50, offset = 0) => {
+    const db = await getDB();
+    const operator = status === 'learned' ? '>' : '=';
+    return await db.getAllAsync<Word>(
+        `SELECT * FROM words WHERE mastery_level ${operator} 0 LIMIT ? OFFSET ?`,
+        [limit, offset]
     );
 };
 

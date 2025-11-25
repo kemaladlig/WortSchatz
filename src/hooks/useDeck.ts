@@ -15,15 +15,29 @@ export function useDeck() {
     const pendingUpdates = useRef<{ wordId: number; newLevel: number }[]>([]);
     const appState = useRef(AppState.currentState);
 
-    const fetchWords = useCallback(async () => {
-        setIsLoading(true);
+    const isFetching = useRef(false);
+
+    const loadMore = useCallback(async (currentWords: Word[]) => {
+        if (isFetching.current) return;
+        isFetching.current = true;
+
         try {
-            const newWords = await getWords(10);
-            setWords(newWords);
+            const currentIds = currentWords.map(w => w.id);
+            const newWords = await getWords(10, currentIds);
+
+            if (newWords.length > 0) {
+                setWords(prev => {
+                    // Filter out any duplicates that might have sneaked in (though excludeIds should prevent this)
+                    const existingIds = new Set(prev.map(w => w.id));
+                    const uniqueNewWords = newWords.filter(w => !existingIds.has(w.id));
+                    return [...prev, ...uniqueNewWords];
+                });
+            }
         } catch (e) {
             console.error(e);
         } finally {
             setIsLoading(false);
+            isFetching.current = false;
         }
     }, []);
 
@@ -51,13 +65,13 @@ export function useDeck() {
 
     useEffect(() => {
         checkAndResetDaily();
-        fetchWords();
+        loadMore([]);
 
         // Flush on unmount
         return () => {
             flushUpdates();
         };
-    }, [fetchWords, flushUpdates]);
+    }, [loadMore, flushUpdates]);
 
     // Flush when app goes to background
     useEffect(() => {
@@ -86,18 +100,12 @@ export function useDeck() {
 
             // Fetch new words if running low
             if (newWords.length <= 3) {
-                // Don't block on fetch
-                fetchWords();
+                loadMore(newWords);
             }
 
             return newWords;
         });
-
-        // Flush every 5 updates for faster feedback
-        if (pendingUpdates.current.length >= 5) {
-            flushUpdates();
-        }
-    }, [fetchWords, flushUpdates]);
+    }, [loadMore]);
 
     const handleSwipeRight = useCallback(async (wordId: number, currentLevel: number) => {
         // Got it: Increment mastery
@@ -114,24 +122,22 @@ export function useDeck() {
 
             // Fetch new words if running low
             if (newWords.length <= 3) {
-                // Don't block on fetch
-                fetchWords();
+                loadMore(newWords);
             }
 
             return newWords;
         });
-
-        // Flush every 5 updates for faster feedback
-        if (pendingUpdates.current.length >= 5) {
-            flushUpdates();
-        }
-    }, [fetchWords, incrementDailyProgress, flushUpdates]);
+    }, [incrementDailyProgress, loadMore]);
 
     return {
         words,
         isLoading,
         handleSwipeLeft,
         handleSwipeRight,
-        refresh: fetchWords,
+        refresh: () => {
+            setWords([]);
+            setIsLoading(true);
+            loadMore([]);
+        },
     };
 }

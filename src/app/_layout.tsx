@@ -39,7 +39,7 @@ export default function RootLayout() {
     }
 
     prepare();
-  }, [colorScheme]);
+  }, []);
 
   if (!isDbReady) {
     return null; // Or a custom Splash Screen component

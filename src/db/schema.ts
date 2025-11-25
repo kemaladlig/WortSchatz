@@ -1,14 +1,18 @@
-export const CREATE_WORDS_TABLE = `
-  CREATE TABLE IF NOT EXISTS words (
+  export const CREATE_WORDS_TABLE = `CREATE TABLE IF NOT EXISTS words(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     german_word TEXT NOT NULL,
     article TEXT NOT NULL,
     translation TEXT NOT NULL,
     example_sentence TEXT,
     mastery_level INTEGER DEFAULT 0,
-    last_reviewed DATETIME
-  );
-`;
+    level TEXT DEFAULT 'A1',
+    last_reviewed DATETIME,
+    easiness_factor REAL DEFAULT 2.5,
+    interval INTEGER DEFAULT 0,
+    repetitions INTEGER DEFAULT 0,
+    next_review_date DATETIME
+  );`;
+
 
 export const CREATE_LESSONS_TABLE = `
   CREATE TABLE IF NOT EXISTS lessons (
@@ -16,6 +20,7 @@ export const CREATE_LESSONS_TABLE = `
     title TEXT NOT NULL,
     content TEXT NOT NULL,
     order_index INTEGER NOT NULL,
+    level TEXT DEFAULT 'A1',
     is_completed INTEGER DEFAULT 0
   );
 `;
